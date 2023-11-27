@@ -64,6 +64,7 @@
                                     inset-block-start: 0;
                                     inset-inline-start: 0;
 
+                                    background-image: none;
                                     color: var(--color-container-index);
 
                                     font-size: 3em;
@@ -78,6 +79,19 @@
             }
 
             footer {
+            }
+
+            &.cover {
+                grid-template-rows: 1fr auto;
+
+                .link {
+                    display: grid;
+                    place-items: center;
+
+                    img {
+                        margin: 0;
+                    }
+                }
             }
 
             &.seven-cs {
