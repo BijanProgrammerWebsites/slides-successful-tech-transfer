@@ -1,5 +1,5 @@
 import Reveal from 'reveal.js';
-import Markdown from 'reveal.js/plugin/markdown/markdown';
+import ZoomPlugin from 'reveal.js/plugin/zoom/zoom';
 
 export class RevealService {
     public start(): void {
@@ -11,7 +11,7 @@ export class RevealService {
             rtl: true,
             display: 'grid',
             hideCursorTime: 1000,
-            plugins: [Markdown],
+            plugins: [ZoomPlugin],
         });
 
         // @ts-ignore
