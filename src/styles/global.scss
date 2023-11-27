@@ -37,3 +37,29 @@ img.icon {
 
     vertical-align: middle;
 }
+
+ul {
+    li {
+        list-style: none;
+
+        margin-block-end: 1rem;
+
+        &::before {
+            --size: 1.2em;
+
+            content: "";
+
+            background-image: url("/src/assets/icons/check-mark.png");
+            background-size: var(--size);
+
+            display: inline-block;
+
+            width: var(--size);
+            height: var(--size);
+
+            vertical-align: middle;
+
+            margin-inline-end: 0.5rem;
+        }
+    }
+}
